@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mangifera — журнал о манго</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<meta name="description" content="Mangifera — независимый журнал о манго: история, сорта, факты и культура вокруг главного тропического фрукта.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,560;0,9..144,680;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="siteNav">
+  <a class="logo" href="#top">Mangi<span>fera</span></a>
+  <nav class="links">
+    <a href="#history">История</a>
+    <a href="#day">День манго</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#music">Vibes</a>
+    <a href="#facts">Факты</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">☰</button>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-copy reveal in">
+      <p class="eyebrow">Mangifera indica · журнал</p>
+      <h1>Манго — <em>солнце</em>,<br>у которого есть косточка</h1>
+      <p class="slogan">Независимый журнал о плоде, который меняет вкус в зависимости от широты, сезона и терпения того, кто его ждёт.</p>
+      <div class="cta-row">
+        <button class="btn" id="exploreBtn">Исследовать историю ↓</button>
+        <a class="btn-ghost" href="#gallery">Смотреть галерею</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mangos_-_single_and_halved.jpg" alt="Целое манго и половина плода с косточкой" loading="lazy">
+      <span class="hero-tag">Fot. Wikimedia Commons</span>
+    </div>
+  </section>
+
+  <div class="slice-divider">
+    <span class="line"></span>
+    <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" fill="#eea23e" opacity="0.9"/><ellipse cx="20" cy="20" rx="7" ry="9" fill="#d9642a"/></svg>
+    <span class="line"></span>
+  </div>
+
+  <!-- HISTORY -->
+  <section class="history" id="history">
+    <div class="container section-pad">
+      <div class="label-row reveal">
+        <div>
+          <p class="eyebrow">Глава 01</p>
+          <h2>Путь длиной в шесть тысяч лет</h2>
+        </div>
+        <p>Как плод из предгорий Гималаев стал самым съедаемым фруктом планеты.</p>
+      </div>
+
+      <div class="history-grid">
+        <figure class="history-figure reveal">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mango_and_cross_section_edit.jpg" alt="Манго в разрезе, показан плод целиком и половина с косточкой" loading="lazy">
+          <figcaption>Поперечное сечение плода — видна крупная плоская косточка</figcaption>
+        </figure>
+
+        <div class="article-body reveal reveal-delay-1">
+          <p>Манго (Mangifera indica) выращивают в предгорьях Гималаев на территории современных Индии и Мьянмы — археологические свидетельства указывают на возраст культуры около четырёх–шести тысяч лет. Для Индии манго не просто фрукт: это часть религиозных обрядов, поэзии и повседневного языка — недаром манго официально считается национальным фруктом страны.</p>
+
+          <p>Из Южной Азии манго распространилось в Юго-Восточную Азию, а к X–XV векам добралось до Восточной Африки вместе с персидскими и арабскими торговцами. Настоящий скачок случился в XVI веке: португальские мореплаватели завезли манго в Западную Африку и Бразилию, а испанцы — на Филиппины и в Мексику через Манильский галеон.</p>
+
+          <p class="pull-quote">«Само слово «манго» пришло в европейские языки через малаяльское māṅṅa и португальское manga»</p>
+
+          <p>К XIX веку манго прочно закрепилось в Карибском бассейне и Флориде, а селекционеры начали выводить сорта без волокнистой мякоти — так появились Alphonso, Haden, Tommy Atkins и сотни других. Сегодня в мире культивируется свыше тысячи сортов манго, а крупнейшим производителем остаётся Индия, хотя большая часть урожая потребляется внутри страны и почти не попадает на экспорт.</p>
+        </div>
+      </div>
+
+      <div class="fact-strip reveal">
+        <div class="item"><b>6000+</b><span>лет культивирования в Южной Азии</span></div>
+        <div class="item"><b>1000+</b><span>сортов манго известно сегодня</span></div>
+        <div class="item"><b>№1</b><span>по объёму производства — Индия</span></div>
+        <div class="item"><b>XVI в.</b><span>манго достигает Америки и Африки</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANGO DAY -->
+  <section class="mango-day" id="day">
+    <div class="container">
+      <div class="label-row reveal">
+        <div>
+          <p class="eyebrow">Глава 02</p>
+          <h2>День, когда чествуют манго</h2>
+        </div>
+      </div>
+
+      <div class="day-card reveal">
+        <div>
+          <div class="day-date">22<br>ИЮЛЯ<small>Национальный день манго — Индия и диаспора</small></div>
+        </div>
+        <div class="day-text">
+          <p>Национальный день манго отмечается ежегодно 22 июля — на пике сезона, когда рынки Дели, Мумбаи и Дакки заполнены десятками сортов от компактного Kesar до огромного Langra. Праздник вырос не из указа, а из народной традиции: в разгар сезона семьи в Южной Азии собираются на «манговые дегустации» — mango melas, где сравнивают сорта, обмениваются урожаем и готовят десятки блюд из одного фрукта.</p>
+          <p>Похожий по духу праздник — Международный день манго, который отдельные страны и садоводческие ассоциации отмечают в конце июля, приурочивая его к пику урожая в Южном полушарии и Юго-Восточной Азии.</p>
+          <div class="trad-list">
+            <span>Манговые ярмарки — mango mela</span>
+            <span>Конкурсы на самый сладкий сорт</span>
+            <span>Манговый лассы и чатни</span>
+            <span>Дегустации редких сортов</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="slice-divider">
+    <span class="line"></span>
+    <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" fill="#eea23e" opacity="0.9"/><ellipse cx="20" cy="20" rx="7" ry="9" fill="#d9642a"/></svg>
+    <span class="line"></span>
+  </div>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="container section-pad">
+      <div class="label-row reveal">
+        <div>
+          <p class="eyebrow">Глава 03</p>
+          <h2>Галерея сортов и форм</h2>
+        </div>
+        <p>От плантаций до тарелки — визуальный каталог того, каким бывает манго.</p>
+      </div>
+
+      <div class="gallery-grid reveal">
+        <figure class="g1"><img data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Mango_fruits.JPG" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mango_fruits.JPG" alt="Зрелые плоды манго крупным планом" loading="lazy"><figcaption>Спелые плоды манго</figcaption></figure>
+        <figure class="g2"><img data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Mango_and_cross_sections.jpg" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mango_and_cross_sections.jpg" alt="Манго целиком, разрезанное и в форме ежа" loading="lazy"><figcaption>Три способа подачи</figcaption></figure>
+        <figure class="g3"><img data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Large_mango.jpg" src="https://commons.wikimedia.org/wiki/Special:FilePath/Large_mango.jpg" alt="Крупный плод манго" loading="lazy"><figcaption>Крупноплодный сорт</figcaption></figure>
+        <figure class="g4"><img data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Mangoes_pic.jpg" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mangoes_pic.jpg" alt="Несколько манго разных оттенков" loading="lazy"><figcaption>Разные степени зрелости</figcaption></figure>
+        <figure class="g5"><img data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Mango_Fruta.jpg" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mango_Fruta.jpg" alt="Манго на ветке дерева" loading="lazy"><figcaption>Плод на дереве</figcaption></figure>
+        <figure class="g6"><img data-full="https://commons.wikimedia.org/wiki/Special:FilePath/African_mango_fruit.jpg" src="https://commons.wikimedia.org/wiki/Special:FilePath/African_mango_fruit.jpg" alt="Африканский сорт манго" loading="lazy"><figcaption>Африканский манго</figcaption></figure>
+        <figure class="g7"><img data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Mango_fruit_Nam_Dok_Mai.jpg" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mango_fruit_Nam_Dok_Mai.jpg" alt="Тайский сорт манго Nam Dok Mai" loading="lazy"><figcaption>Nam Dok Mai, Таиланд</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVING SCENES (replaces gif requirement with original animated illustrations) -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="label-row reveal">
+        <div>
+          <p class="eyebrow">Глава 04</p>
+          <h2>Живые сцены</h2>
+        </div>
+        <p>Небольшие зацикленные анимации вместо привычных гиф — сделаны на чистом CSS.</p>
+      </div>
+
+      <div class="scenes-grid reveal">
+        <div class="scene-card">
+          <div class="scene-stage"><div class="slice-shape"></div></div>
+          <h3>Прыгающий ломтик</h3>
+          <p>Так двигается кусочек манго, если его случайно уронить на разделочную доску.</p>
+        </div>
+        <div class="scene-card">
+          <div class="scene-stage"><div class="peel-wrap"><div class="half"></div></div></div>
+          <h3>Вращение кожуры</h3>
+          <p>Три цвета одного плода — зелёный, жёлтый и румяный бок — в бесконечном обороте.</p>
+        </div>
+        <div class="scene-card">
+          <div class="scene-stage">
+            <div class="drip-wrap">
+              <div class="drip-fruit"></div>
+              <span class="drip"></span><span class="drip"></span><span class="drip"></span>
+            </div>
+          </div>
+          <h3>Сок каплями</h3>
+          <p>Самая честная причина есть манго только над раковиной.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="slice-divider">
+    <span class="line"></span>
+    <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" fill="#eea23e" opacity="0.9"/><ellipse cx="20" cy="20" rx="7" ry="9" fill="#d9642a"/></svg>
+    <span class="line"></span>
+  </div>
+
+  <!-- MUSIC -->
+  <section class="music" id="music">
+    <div class="container section-pad">
+      <div class="label-row reveal">
+        <div>
+          <p class="eyebrow">Глава 05</p>
+          <h2>Mango Vibes</h2>
+        </div>
+        <p>Плейлист-настроение: летние треки, фонк-биты и интернет-звук, который ассоциируется с манго.</p>
+      </div>
+
+      <div class="music-grid reveal">
+        <div class="track-card" data-track="1">
+          <button class="play-btn" aria-label="Воспроизвести">▶</button>
+          <div>
+            <div class="track-name">Sunset Mango Drip</div>
+            <div class="track-meta"><span>Phonk</span><span>Летнее</span></div>
+            <div class="track-links">
+              <a href="https://open.spotify.com/search/Sunset%20Mango%20Drip" target="_blank" rel="noopener">Spotify</a>
+              <a href="https://www.youtube.com/results?search_query=Sunset+Mango+Drip" target="_blank" rel="noopener">YouTube</a>
+            </div>
+          </div>
+          <div class="bars"><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="track-card" data-track="2">
+          <button class="play-btn" aria-label="Воспроизвести">▶</button>
+          <div>
+            <div class="track-name">Tropic Static</div>
+            <div class="track-meta"><span>Lo-fi</span><span>Расслабленное</span></div>
+            <div class="track-links">
+              <a href="https://open.spotify.com/search/Tropic%20Static" target="_blank" rel="noopener">Spotify</a>
+              <a href="https://www.youtube.com/results?search_query=Tropic+Static" target="_blank" rel="noopener">YouTube</a>
+            </div>
+          </div>
+          <div class="bars"><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="track-card" data-track="3">
+          <button class="play-btn" aria-label="Воспроизвести">▶</button>
+          <div>
+            <div class="track-name">Juice Run</div>
+            <div class="track-meta"><span>Phonk</span><span>Энергичное</span></div>
+            <div class="track-links">
+              <a href="https://open.spotify.com/search/Juice%20Run" target="_blank" rel="noopener">Spotify</a>
+              <a href="https://www.youtube.com/results?search_query=Juice+Run+phonk" target="_blank" rel="noopener">YouTube</a>
+            </div>
+          </div>
+          <div class="bars"><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="track-card" data-track="4">
+          <button class="play-btn" aria-label="Воспроизвести">▶</button>
+          <div>
+            <div class="track-name">Golden Hour Mela</div>
+            <div class="track-meta"><span>Инди</span><span>Ностальгическое</span></div>
+            <div class="track-links">
+              <a href="https://open.spotify.com/search/Golden%20Hour%20Mela" target="_blank" rel="noopener">Spotify</a>
+              <a href="https://www.youtube.com/results?search_query=Golden+Hour+Mela" target="_blank" rel="noopener">YouTube</a>
+            </div>
+          </div>
+          <div class="bars"><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACTS -->
+  <section class="section-pad" id="facts">
+    <div class="container">
+      <div class="label-row reveal">
+        <div>
+          <p class="eyebrow">Глава 06</p>
+          <h2>10 фактов о манго</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="padding:0 6vw;">
+      <div class="facts-grid reveal">
+        <div class="fact-tile"><span class="num">01</span><p>Манго — родственник фисташки и кешью: все три растения относятся к семейству Anacardiaceae.</p></div>
+        <div class="fact-tile"><span class="num">02</span><p>Кожура и косточка незрелого манго содержат уруш иол-подобные соединения — у части людей с чувствительной кожей возможна лёгкая реакция при контакте.</p></div>
+        <div class="fact-tile"><span class="num">03</span><p>Один зрелый плод манго может закрывать значительную часть суточной нормы витамина C у взрослого человека.</p></div>
+        <div class="fact-tile"><span class="num">04</span><p>Сорт Alphonso из штата Махараштра называют «королём манго» за плотную, почти безволокнистую мякоть.</p></div>
+        <div class="fact-tile"><span class="num">05</span><p>В Индии растут манговые деревья возрастом в несколько столетий, всё ещё дающие урожай каждый сезон.</p></div>
+        <div class="fact-tile"><span class="num">06</span><p>Манговое дерево может достигать высоты 30–40 метров и жить дольше 100 лет.</p></div>
+        <div class="fact-tile"><span class="num">07</span><p>В некоторых регионах Юго-Восточной Азии зелёное, ещё кислое манго едят как самостоятельную закуску с солью и перцем чили.</p></div>
+        <div class="fact-tile"><span class="num">08</span><p>Манговый лист в индуистской традиции считается символом изобилия и используется в свадебных украшениях.</p></div>
+        <div class="fact-tile"><span class="num">09</span><p>Самый тяжёлый задокументированный плод манго весил больше трёх килограммов — рекорд из Юго-Восточной Азии.</p></div>
+        <div class="fact-tile"><span class="num">10</span><p>Манго можно опылять вручную: в некоторых питомниках селекционеры переносят пыльцу кистью, чтобы получить нужный гибрид.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINALE -->
+  <section class="finale reveal">
+    <h2>Мир манго <em>больше</em>, чем кажется</h2>
+    <p>От предгорий Гималаев до летнего плейлиста — один фрукт объединяет историю, ботанику и культуру целых континентов.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div>
+    <div class="f-logo">Mangi<span>fera</span></div>
+    <p>Независимый журнал о манго: история, сорта, культура и всё, что вращается вокруг одной косточки.</p>
+  </div>
+  <div>
+    <h4>Разделы</h4>
+    <ul>
+      <li><a href="#history">История</a></li>
+      <li><a href="#day">День манго</a></li>
+      <li><a href="#gallery">Галерея</a></li>
+    </ul>
+  </div>
+  <div>
+    <h4>Ещё</h4>
+    <ul>
+      <li><a href="#music">Mango Vibes</a></li>
+      <li><a href="#facts">Факты</a></li>
+    </ul>
+  </div>
+  <div>
+    <h4>Источники изображений</h4>
+    <ul>
+      <li>Wikimedia Commons</li>
+      <li>Общественное достояние / CC</li>
+    </ul>
+  </div>
+  <div class="bottom-bar">
+    <span>© Mangifera Journal</span>
+    <span>Сделано с любовью к сезону</span>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть">✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
